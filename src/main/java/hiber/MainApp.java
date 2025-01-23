@@ -31,7 +31,7 @@ public class MainApp {
       userService.add(user3.setCar(chery).setUser(user3));
       userService.add(user4.setCar(chevrolet).setUser(user4));
 
-      for (User user : userService.listUsers()) {
+      for (User user : userService.getAllUsers()) {
          System.out.println(user.toString() + " - " + user.getCar().toString());
       }
 
